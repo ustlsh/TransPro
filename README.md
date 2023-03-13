@@ -34,7 +34,7 @@ pip install -r requirements.txt
 We use OCTA-3M and OCTA-6M datasets in our paper. These two datasets are from OCTA-500 dataset: https://ieee-dataport.org/open-access/octa-500
 
 ### Pretrained-weights for VPG and HCG modules:
-You can download them here:
+You can download them here: https://drive.google.com/drive/folders/1Jby7auI28MvYTxvXj7Mf_32j8LLw6XHU?usp=sharing.
 You need to move them into "pretrain-weights" folder.
 
 ### Train 
