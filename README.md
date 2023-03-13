@@ -4,8 +4,13 @@ This repository contains the official PyTorch implementation of the following pa
 
 Vessel-Promoted OCT to OCTA Image Translation by Heuristic Contextual Constraints
 
-Shuhan Li, Dong Zhang, Xiaomeng Li, Chubin Ou, Lin An, Yanwu Xu, Kwang-Ting Cheng  
-Computer Science Engineering, Hong Kong University of Science and Technology 
+Shuhan Li<sup>1</sup>, Dong Zhang<sup>1</sup>, Xiaomeng Li<sup>2</sup>, Chubin Ou<sup>3</sup>, Lin An<sup>4</sup>, Yanwu Xu<sup>5</sup>, Kwang-Ting Cheng<sup>2</sup>  
+<sup>1</sup>Department of Computer Science Engineering, Hong Kong University of Science and Technology  
+<sup>2</sup>Department of Electronic and Computing Engineering, Hong Kong University of Science and Technology  
+<sup>3</sup>Weizhi Meditech (Foshan) Co., Ltd, China  
+<sup>4</sup>Guangdong Weiren Meditech Co., Ltd, China  
+<sup>5</sup>South China University of Technology, and Pazhou Lab  
+
 
 ## Abstract
 Optical Coherence Tomography Angiography (OCTA) has become increasingly vital in the clinical screening of fundus diseases due to its ability to capture accurate 3D imaging of blood vessels in a non-contact scanning manner. However, the acquisition of OCTA images remains challenging due to the requirement of exclusive sensors and expensive devices. In this paper, we propose a novel framework, TransPro, that translates 3D Optical Coherence Tomography (OCT) images into exclusive 3D OCTA images using an image translation pattern. Our main objective is to address two issues in existing image translation baselines, namely, the aimlessness in the translation process and incompleteness of the translated object. The former refers to the overall quality of the translated OCTA images being satisfactory, but the retinal vascular quality being low. The latter refers to incomplete objects in translated OCTA images due to the lack of global contexts. TransPro merges a 2D retinal vascular segmentation model and a 2D OCTA image translation model into a 3D image translation baseline for the 2D projection map projected by the translated OCTA images. The 2D retinal vascular segmentation model can improve attention to the retinal vascular, while the 2D OCTA image translation model introduces beneficial heuristic contextual information. Extensive experimental results on two challenging datasets demonstrate that TransPro can consistently outperform existing approaches with minimal computational overhead during training and none during testing.
