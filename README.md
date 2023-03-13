@@ -52,7 +52,7 @@ python -m visdom.server -p 6031
 ```
 and click the URL http://localhost:6031.
 
-To train TransPro model on OCTA-3M dataset, e.g.:
+To train TransPro model on OCTA-3M dataset, e.g.,:
 ```
 python train3d.py --dataroot ./octa-500/OCT2OCTA3M_3D --name transpro_3M --model TransPro --netG unet_256 --direction AtoB --lambda_A 10 --lambda_C 5 --dataset_mode alignedoct2octa3d --norm batch --pool_size 0 --load_size 304 --input_nc 1 --output_nc 1 --display_port 6031 --gpu_ids 0 --no_flip
 ```
@@ -64,9 +64,9 @@ python test3d.py --dataroot ./octa-500/OCT2OCTA3M_3D --name transpro_3M --test_n
 ```
 
 ### Results
-
+![image](https://github.com/ustlsh/TransPro/blob/main/imgs/result.png)
 
 ## Citation
 If our paper is useful for your research, please cite our paper
-## Implement references
+## Implement reference
 [CycleGAN and pix2pix in PyTorch](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
