@@ -4,8 +4,7 @@ This repository contains the official PyTorch implementation of the following pa
 
 Vessel-Promoted OCT to OCTA Image Translation by Heuristic Contextual Constraints
 
-Shuhan Li, Dong Zhang, Xiaomeng Li, Chubin Ou, Lin An, Yanwu Xu, Kwang-Ting Cheng
-
+Shuhan Li, Dong Zhang, Xiaomeng Li, Chubin Ou, Lin An, Yanwu Xu, Kwang-Ting Cheng  
 Computer Science Engineering, Hong Kong University of Science and Technology 
 
 ## Abstract
