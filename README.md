@@ -58,6 +58,9 @@ To test the model, you should find the best training epoch (e.g., 164) in valida
 python test3d.py --dataroot ./octa-500/OCT2OCTA3M_3D --name transpro_3M --test_name transpro_3M --model TransPro --netG unet_256 --direction AtoB --lambda_A 10 --lambda_C 5 --dataset_mode alignedoct2octa3d --norm batch --input_nc 1 --output_nc 1 --gpu_ids 0 --num_test 15200 --which_epoch 164 --load_iter 164
 ```
 
+### Results
+
+
 ## Citation
 If our paper is useful for your research, please cite our paper
 ## Implement references
