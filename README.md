@@ -42,7 +42,9 @@ pip install -r requirements.txt
 We use OCTA-3M and OCTA-6M datasets in our paper. These two datasets are from OCTA-500 dataset: https://ieee-dataport.org/open-access/octa-500
 
 ### Pretrained-weights for VPG and HCG modules:
-You can download them here: https://drive.google.com/drive/folders/1Jby7auI28MvYTxvXj7Mf_32j8LLw6XHU?usp=sharing.
+You can download them here:  
+VPG: https://drive.google.com/file/d/1dUf45500QKoO9h9VEDOvFGlN2rxD_853/view?usp=share_link  
+HCG: https://drive.google.com/file/d/1eAIt3feAIsr1Wn_f_mnPmYf6iVwwLmyk/view?usp=share_link  
 You need to move them into "pretrain-weights" folder.
 
 ### Train 
@@ -52,13 +54,13 @@ python -m visdom.server -p 6031
 ```
 and click the URL http://localhost:6031.
 
-To train TransPro model on OCTA-3M dataset, e.g.,:
+- To train TransPro model on OCTA-3M dataset, e.g.,:
 ```
 python train3d.py --dataroot ./octa-500/OCT2OCTA3M_3D --name transpro_3M --model TransPro --netG unet_256 --direction AtoB --lambda_A 10 --lambda_C 5 --dataset_mode alignedoct2octa3d --norm batch --pool_size 0 --load_size 304 --input_nc 1 --output_nc 1 --display_port 6031 --gpu_ids 0 --no_flip
 ```
 
 ### Test
-To test the model, you should find the best training epoch (e.g., 164) in validation set from the saved "loss_log.txt" file, and then run:
+- To test the model, you should find the best training epoch (e.g., 164) in validation set from the saved "loss_log.txt" file, and then run:
 ```
 python test3d.py --dataroot ./octa-500/OCT2OCTA3M_3D --name transpro_3M --test_name transpro_3M --model TransPro --netG unet_256 --direction AtoB --lambda_A 10 --lambda_C 5 --dataset_mode alignedoct2octa3d --norm batch --input_nc 1 --output_nc 1 --gpu_ids 0 --num_test 15200 --which_epoch 164 --load_iter 164
 ```
