@@ -19,8 +19,10 @@ Optical Coherence Tomography Angiography (OCTA) has become increasingly vital in
 ![image](https://github.com/ustlsh/TransPro/blob/main/imgs/framework.png)
 ## Qualitative results
 ![image](https://github.com/ustlsh/TransPro/blob/main/imgs/figure3.png)
+## Quantitative results
+![image](https://github.com/ustlsh/TransPro/blob/main/imgs/result.png)
 
-## Install
+## Installation
 
 - Create conda environment and activate it:
 ```
@@ -32,7 +34,7 @@ conda activate octa
 git clone https://github.com/ustlsh/TransPro
 cd TransPro
 ```
-- Install requirements
+- Install requirements:
 ```
 pip install -r requirements.txt
 ```
@@ -41,7 +43,7 @@ pip install -r requirements.txt
 ### Prepare data
 We use OCTA-3M and OCTA-6M datasets in our paper. These two datasets are from OCTA-500 dataset: https://ieee-dataport.org/open-access/octa-500
 
-### Pretrained-weights for VPG and HCG modules:
+### Pretrained-weights for VPG and HCG modules
 You can download them here:  
 VPG: https://drive.google.com/file/d/1dUf45500QKoO9h9VEDOvFGlN2rxD_853/view?usp=share_link  
 HCG: https://drive.google.com/file/d/1eAIt3feAIsr1Wn_f_mnPmYf6iVwwLmyk/view?usp=share_link  
@@ -65,8 +67,6 @@ python train3d.py --dataroot ./octa-500/OCT2OCTA3M_3D --name transpro_3M --model
 python test3d.py --dataroot ./octa-500/OCT2OCTA3M_3D --name transpro_3M --test_name transpro_3M --model TransPro --netG unet_256 --direction AtoB --lambda_A 10 --lambda_C 5 --dataset_mode alignedoct2octa3d --norm batch --input_nc 1 --output_nc 1 --gpu_ids 0 --num_test 15200 --which_epoch 164 --load_iter 164
 ```
 
-### Quantitative results
-![image](https://github.com/ustlsh/TransPro/blob/main/imgs/result.png)
 
 ## Citation
 If our paper is useful for your research, please cite our paper
