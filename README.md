@@ -2,7 +2,7 @@
 
 This repository contains the official PyTorch implementation of the following paper:
 
-Vessel-Promoted OCT to OCTA Image Translation by Heuristic Contextual Constraints
+***Vessel-Promoted OCT to OCTA Image Translation by Heuristic Contextual Constraints***
 
 Shuhan Li<sup>1</sup>, Dong Zhang<sup>1</sup>, Xiaomeng Li<sup>2</sup>, Chubin Ou<sup>3</sup>, Lin An<sup>4</sup>, Yanwu Xu<sup>5</sup>, Kwang-Ting Cheng<sup>2</sup>  
 <sup>1</sup>Department of Computer Science and Engineering, The Hong Kong University of Science and Technology, Hong Kong, China  
@@ -65,10 +65,10 @@ python train3d.py --dataroot ./octa-500/OCT2OCTA3M_3D --name transpro_3M --model
 python test3d.py --dataroot ./octa-500/OCT2OCTA3M_3D --name transpro_3M --test_name transpro_3M --model TransPro --netG unet_256 --direction AtoB --lambda_A 10 --lambda_C 5 --dataset_mode alignedoct2octa3d --norm batch --input_nc 1 --output_nc 1 --gpu_ids 0 --num_test 15200 --which_epoch 164 --load_iter 164
 ```
 
-### Results
+### Quantitative results
 ![image](https://github.com/ustlsh/TransPro/blob/main/imgs/result.png)
 
 ## Citation
 If our paper is useful for your research, please cite our paper
-## Implement reference
+## Implementation reference
 [CycleGAN and pix2pix in PyTorch](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
