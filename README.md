@@ -1,4 +1,4 @@
-# Vessel-Promoted OCT to OCTA Image Translation by Heuristic Contextual Constraints
+# TransPro
 
 This repository contains the official PyTorch implementation of the following paper:
 
@@ -6,6 +6,7 @@ This repository contains the official PyTorch implementation of the following pa
 
 Shuhan Li, Dong Zhang, Xiaomeng Li, Chubin Ou, Lin An, Yanwu Xu, Kwang-Ting Cheng
 
+https://arxiv.org/abs/2303.06807
 
 ## Abstract
 <p align="justify">
@@ -37,14 +38,12 @@ pip install -r requirements.txt
 
 ## Usage
 ### Data preparation
-We use OCTA-3M and OCTA-6M datasets in our paper. 
-
-These two datasets are from [OCTA-500](https://ieee-dataport.org/open-access/octa-500)
+You can download OCTA-3M and OCTA-6M from [OCTA-500](https://ieee-dataport.org/open-access/octa-500)
 
 ### Pretrained-weights
 You can download weights from: [VPG](https://drive.google.com/file/d/1dUf45500QKoO9h9VEDOvFGlN2rxD_853/view?usp=share_link) and [HCG](https://drive.google.com/file/d/1eAIt3feAIsr1Wn_f_mnPmYf6iVwwLmyk/view?usp=share_link)
 
-You need to move them into "pretrain-weights" folder.
+Move them into the "pretrain-weights" folder.
 
 ### Train 
 - To view training results and loss plots, please run:
@@ -66,6 +65,14 @@ python test3d.py --dataroot ./octa-500/OCT2OCTA3M_3D --name transpro_3M --test_n
 
 ## Citation
 If our paper is useful for your research, please cite:
+```
+@article{li2023vesselpromoted,
+      title={Vessel-Promoted OCT to OCTA Image Translation by Heuristic Contextual Constraints}, 
+      author={Shuhan Li and Dong Zhang and Xiaomeng Li and Chubin Ou and Lin An and Yanwu Xu and Kwang-Ting Cheng},
+      journal={arXiv},
+      year={2023}
+}
+```
 
 ## Implementation reference
 [CycleGAN and pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
