@@ -6,6 +6,7 @@ This repository contains the official PyTorch implementation of the following pa
 
 Shuhan Li, Dong Zhang, Xiaomeng Li, Chubin Ou, Lin An, Yanwu Xu, Kwang-Ting Cheng
 
+https://arxiv.org/abs/2303.06807
 
 ## Abstract
 <p align="justify">
@@ -66,6 +67,14 @@ python test3d.py --dataroot ./octa-500/OCT2OCTA3M_3D --name transpro_3M --test_n
 
 ## Citation
 If our paper is useful for your research, please cite:
+```
+@article{li2023vesselpromoted,
+      title={Vessel-Promoted OCT to OCTA Image Translation by Heuristic Contextual Constraints}, 
+      author={Shuhan Li and Dong Zhang and Xiaomeng Li and Chubin Ou and Lin An and Yanwu Xu and Kwang-Ting Cheng},
+      journal={arXiv},
+      year={2023}
+}
+```
 
 ## Implementation reference
 [CycleGAN and pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
